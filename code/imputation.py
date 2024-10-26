@@ -71,7 +71,7 @@ def main(retrain):
     str_test_df['Allele1'].fillna(allele1_mean, inplace=True)
     str_test_df['Allele2'].fillna(allele2_mean, inplace=True)
 
-    str_test_df.to_csv('data/STR_test_imputed.csv', index=False, delimiter=';')
+    str_test_df.to_csv('data/STR_test_imputed.csv', index=False, sep=';')
     print("Imputed file saved as STR_test_imputed.csv.")
 
 if __name__ == "__main__":
